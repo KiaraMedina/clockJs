@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 15%
+}
+
+.content {
+    width: 100%;
+}
+
+.content p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.date {
+    font-family: Oswald, Arial;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2px;
+    padding: 20px;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.clock {
+    text-align: center;
+    font-family: Oswald, Arial;
+    font-size: 7em;
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    padding: 20px
+}
+
+@media only screen and (max-width:999px) {
+    .date {
+        font-size: 2em;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+    .clock {
+        font-size: 5.5em;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .clock .second,
+    .clock .ampm {
+        font-size: 2.5rem !important;
+        display: block;
+    }
+}
+
+@media only screen and (max-width:662px) {
+    .date {
+        font-size: 1.5em;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+    .clock {
+        font-size: 3em;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .second,
+    .ampm {
+        font-size: 1.5rem !important;
+    }
+}
+
+.box-seconds {
+    display: inline-block;
+}
+
+.clock .second,
+.clock .ampm {
+    font-size: 3rem;
+    display: block;
+}
+
+
+/*
+.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.clock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}*/
